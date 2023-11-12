@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="sequencer">
+        <!-- kick sound -->
+    <div class="kick-track">
+    <div class="controls">
+    <h1>Kick</h1>
+    <button data-track="0" class="mute kick-Volume"><i class="fa-solid fa-microphone-slash"></i></button>
+    <select name="kick-select" id="kick-select">
+        <Option value="./Sounds/kick-classic.wav">Classic Kick</Option>
+        <Option value="./Sounds/kick-808.wav">808 Kick</Option>
+        <Option value="./Sounds/kick-heavy.wav">Kick Heavy</Option>
+        <Option value="./Sounds/kick-softy.wav">Kick Softy</Option>
+    </select>
+    </div>
+    <div class="kick">
+        <div class="pad kick-pad b0"></div>
+        <div class="pad kick-pad b1"></div>
+        <div class="pad kick-pad b2"></div>
+        <div class="pad kick-pad b3"></div>
+        <div class="pad kick-pad b4"></div>
+        <div class="pad kick-pad b5"></div>
+        <div class="pad kick-pad b6"></div>
+        <div class="pad kick-pad b7"></div>
+    </div>
+    </div>
+<!-- Snare sound -->
+    <div class="snare-track">
+        <div class="controls">
+        <h1>Snare </h1>
+        <button data-track="0" class="mute snare-Volume"><i class="fa-solid fa-microphone-slash"></i></button>
+        <select name="snare-select" id="snare-select">
+            <Option value="./Sounds/snare-808.wav">808 Snare</Option>
+            <Option value="./Sounds/snare-acoustic01.wav">Snare Acoustic</Option>
+            <Option value="./Sounds/snare-vinyl02.wav">Snare Vinyl</Option>
+        </select>
+        </div>
+        <div class="snare">
+            <div class="pad snare-pad b0"></div>
+            <div class="pad snare-pad b1"></div>
+            <div class="pad snare-pad b2"></div>
+            <div class="pad snare-pad b3"></div>
+            <div class="pad snare-pad b4"></div>
+            <div class="pad snare-pad b5"></div>
+            <div class="pad snare-pad b6"></div>
+            <div class="pad snare-pad b7"></div>
+        </div>
+        </div>
+<!-- Hihat sound -->
+        <div class="hihat-track">
+            <div class="controls">
+            <h1>Hihat</h1>
+            <button data-track="0" class="mute hihat-Volume"><i class="fa-solid fa-microphone-slash"></i></button>
+            <select name="hihat-select" id="hihat-select">
+                <Option value="./Sounds/hihat-808.wav">808 Hihat</Option>
+                <Option value="./Sounds/hihat-acoustic01.wav">Hihat Acoustic</Option>
+            </select>
+            </div>
+            <div class="hihat">
+                <div class="pad hihat-pad b0"></div>
+                <div class="pad hihat-pad b1"></div>
+                <div class="pad hihat-pad b2"></div>
+                <div class="pad hihat-pad b3"></div>
+                <div class="pad hihat-pad b4"></div>
+                <div class="pad hihat-pad b5"></div>
+                <div class="pad hihat-pad b6"></div>
+                <div class="pad hihat-pad b7"></div>
+            </div>
+            </div>   
+            <button class="play"> Play</button> 
+                <input type="range" class="tempo-slider" 
+                max="300"
+                min="10"
+                value="150"> 
+                <p>Tempo: <span class="tempo-nr">150</span></p>    
+    </div>
+            <audio class="kick-sound" src="./Sounds/kick-classic.wav"></audio>
+            <audio class="snare-sound" src="./Sounds/snare-acoustic01.wav"></audio>
+            <audio class="hihat-sound" src="./Sounds/hihat-acoustic01.wav"></audio>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/js/all.min.js" 
+    integrity="sha512-naukR7I+Nk6gp7p5TMA4ycgfxaZBJ7MO5iC3Fp6ySQyKFHOGfpkSZkYVWV5R7u7cfAicxanwYQ5D1e17EfJcMA==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+   <script src="app.js"></script> 
+</body>
+</html>
